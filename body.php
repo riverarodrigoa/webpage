@@ -1,33 +1,8 @@
 <div class="col s12 m8 l9">
 	<!--Contenido principal, estas tarjetas tienen una vista previa del artícul.
 		Aquí se tiene que aplicar una conexion con mysql para la web dinamica (jquery) -->
-	<div>
-		<?php
-			if($connected){
-				'
-				<div class="card-panel blue-grey darken-1 z-depth-3">
-					<div class="card-content white-text">
-						<span class="card-title"><h5>Estado de la conexion con la base de datos</h5></span>
-						<div class="card-content">
-							<a class="btn-large">Conectado</a>
-						</div>
-					</div>
-				</div>';
-			}
-			else{
-				'<div class="card-panel blue-grey darken-1 z-depth-3">
-					<div class="card-content white-text">
-						<span class="card-title"><h5>Estado de la conexion con la base de datos</h5></span>
-						<div class="card-content">
-							<a class="btn-large disabled">Desconectado</a>
-						</div>
-					</div>
-				</div>';
-			}
-		?>
-	</div>	
-	<div class="card large hoverable">
-		<div class="card-image">
+	
+<!--		<div class="card-image">
 			<img src="/img/test.jpg">
 		<span class="card-title">Título</span>
 		</div>
@@ -47,8 +22,8 @@
 			<div class="chip">
 				Tags
 			</div>
-		</div>
-	</div>
+		</div>-->
+		<?php echo $content ?>
 	
 	<!-- Hasta aqui se termina el contenido dinámico de las tarjetas -->
 	
