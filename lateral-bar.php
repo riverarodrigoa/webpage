@@ -1,3 +1,4 @@
+<?php include ("includes/lateral_bar.php"); ?>
 <!-- inicio de los bloques estaticos con contenido dinámico -->
 <div class="col s12 m4 l3">
 <!-- Artículos mas populares -->
@@ -10,7 +11,7 @@
 				Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
 				</p>
 				<span class="badge"><i class="material-icons right">comment</i>
-					<!-- Numero de comentarios -->
+					
 				</span>
 			</li>
 			<li class="collection-item avatar">
@@ -18,7 +19,7 @@
 				<span class="title">Title</span>
 				<p>First Line</p>
 				<span class="badge"><i class="material-icons right">comment</i>
-					333 <!-- Numero de comentarios -->
+					333
 				</span>
 			</li>
 		</ul>
@@ -26,23 +27,6 @@
 	<div class="divider"></div>
 	<h5 class="center-align green-text text-darken-2">Nuevos artículos</h5>
 		<ul class="collection">
-			<li class="collection-item avatar">
-				<img src="img/test.jpg" alt="" class="circle">
-				<span class="title">Title</span>
-				<p class="truncate">
-				Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-				</p>
-				<span class="badge"><i class="material-icons right">today</i>
-					<!-- Numero de comentarios -->
-				</span>
-			</li>
-			<li class="collection-item avatar">
-				<i class="material-icons circle red">play_arrow</i>
-				<span class="title">Title</span>
-				<p>First Line</p>
-				<span class="badge"><i class="material-icons right">today</i>
-					333 <!-- Numero de comentarios -->
-				</span>
-			</li>
+			<?php echo $articulos_recientes ?>
 		</ul>
 </div>

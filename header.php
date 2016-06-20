@@ -1,4 +1,4 @@
- <div class="navbar-fixed">
+<div class="navbar-fixed">
     <ul id="resenias" class="dropdown-content">
 		<li><a href="#"><i class="material-icons left">local_library</i> Libros</a></li>
 		<li><a href="#"><i class="material-icons left">tv</i> Series</a></li>

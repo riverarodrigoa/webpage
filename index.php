@@ -1,21 +1,3 @@
-<?php
-	// Inclusion de archivo de conexion a la base de datos
-	include ("includes/conection_db.php");
-	
-	// Verificando si hay conexion con la base de datos
-	
-	if($errorDBconexion == false){
-		$content = show_articles($mysqli);
-	}
-	else{
-		$content = '
-			<div class="card-image">
-				<img src="/img/test.jpg">
-			<span class="card-title">ERROR EN LA CONEXION A LA BD</span>
-			</div>
-		';
-	}
-?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -37,10 +19,11 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="/js/scripts.js"></script>
-		
+		<script src="js/jquery.simplePagination.js"></script>
 		<?php include 'header.php'; ?>
 		<div class="row">
 			<?php include 'body.php'; ?>
+			<?php //include ("includes/pagination.php"); ?>
 			<?php include 'lateral-bar.php'; ?>
 		</div>
 		<?php include 'footer.php'; ?>
